@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import {SignUp} from './pages/SignUp'
 import {SignIn} from './pages/SignIn'
 import {Blogs} from './pages/Blogs'
@@ -16,7 +16,7 @@ function App() {
         <Route path='/blog/:id' element= {<Blog/>}/>
         <Route path='/blogs' element={ <Blogs/>}/>
         <Route path='/publish' element={ <Publish/> }/>
-
+        <Route path="*" element={<Navigate to="/signup" />} />
       </Routes>
     </BrowserRouter>
    </>
