@@ -41,9 +41,9 @@ export const BlogCard = ({id,authorName,title,content,publishDate} : BlogCardPro
                 {`${Math.ceil(content.length / 100)} min read`}
                 <div className="flex ml-auto">
                     <div className="flex flex-row mr-3">                        
-                        <svg xmlns="http://www.w3.org/2000/svg" fill={like? 'red':'none'} viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  className={`z-10 w-6 h-6 ml-2 ${like ? "text-red-500" : "text-current"}`} 
+                        <svg xmlns="http://www.w3.org/2000/svg" fill={like? 'red':'none'} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"  className={`z-10 w-6 h-6 ml-2 ${like ? "text-red-500" : "text-current"}`} 
                         onClick={clicked} >
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
                         </svg>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 ml-2">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />

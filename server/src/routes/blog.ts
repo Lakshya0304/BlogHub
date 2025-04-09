@@ -102,8 +102,8 @@ blog.get('/bulk' , async (c)=> {
         }
     })
     return c.json({
-        blogs}
-    );
+        blogs
+    });
 } )
 
 blog.get('/:id' , async (c)=> {

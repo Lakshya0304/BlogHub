@@ -126,7 +126,7 @@ app.use("*" , async (c,next)=> {
         },  
     }).$extends(withAccelerate())
 
-    c.set("prisma" , prisma)
+    c.set("prisma" , prisma as unknown as PrismaClient)
     await next();
 })
 
